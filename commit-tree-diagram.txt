@@ -1,0 +1,23 @@
+Git Branch Diagram - Hello World Project
+
+Common History:
+[Initial] → [Add shebang] → [Add comment] → [Update variable] → [Move to lib] → [Add Makefile]
+                                                                                    ↓
+                                            ┌───────────────────────────────────────┴───────┐
+                                            │                                               │
+                                      main branch                                    greet branch
+                                            │                                               │
+                                            ↓                                               ↓
+                                     [Add README.md]                              [Add greeter.sh]
+                                            │                                               ↓
+                                         (main)                                  [Update hello.sh to use Greeter]
+                                                                                            ↓
+                                                                              [Add comment to Makefile]
+                                                                                            │
+                                                                                         (greet)
+
+Legend:
+- (main) = main branch pointer
+- (greet) = greet branch pointer
+- Branches diverged after "Add Makefile" commit
+- Each branch has unique commits
